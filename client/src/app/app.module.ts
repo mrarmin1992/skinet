@@ -8,7 +8,7 @@ import { HomeModule } from './home/home.module';
 import { ErrorInterceptor } from './core/interceptors/error.interceptors';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { LoadingInterceptor } from './core/interceptors/loading.interceptors';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import { LoadingInterceptor } from './core/interceptors/loading.interceptors';
     HttpClientModule,
     CoreModule,
     NgxSpinnerModule,
-    HomeModule
+    HomeModule,
+    BrowserAnimationsModule
 
   ],
   providers: [
